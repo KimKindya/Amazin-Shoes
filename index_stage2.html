@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazing Shoes - Classy Shoes for Folks</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+
+<!-- Start Slider HEAD section -->
+      <link rel="stylesheet" type="text/css" href="engine1/style.css"/>
+      <script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End Slider HEAD section -->
+    <style>
+
+
+      body{
+            font-family: arial;
+            background-color: #32174D;
+      }
+        
+      .left-column {
+            float: left;
+            width: 20%;
+            height: auto;
+            background-color: #32174D;
+            margin-bottom: 10%;
+      }
+
+      .right-column {
+            float: left;
+            /* float: right; */
+            width: 80%;
+            height: auto;
+            background-color: #32174D;
+            margin-bottom: 10%;
+      } 
+      .logocontainer{
+            height:97%;
+            background-color: #32174D;
+            position:absolute;
+            z-index: 10;
+      }
+      .navcontainer{
+            width:100%;
+            height:600px;
+            text-align: center;
+            /*margin-top: 25%;*/
+            vertical-align: middle;
+      }
+      .socmedcontainer{
+            width:100%;
+            height:60px;
+            /*background-color: #86608E;*/
+      }
+
+      .women {
+            width:47.5%;
+            height:550px;
+            background-color: #9f0e97;
+            float:left;
+            /*margin-left:2.5%;*/
+      }
+
+      .men {
+            width:47.5%;
+            height:550px;
+            background-color: #9f0e97;
+            float:right;
+            margin-right:2.5%;
+      }
+      .depttitle {
+            line-height: 60px;
+            text-align: center;
+            font-size: 20pt;
+            color:#ffffff;
+            padding-top: 10px;
+      }
+      .gallery{
+            width:100%;
+            height:260px;
+            margin-bottom: 2.5%;
+      }
+
+      .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color:#86608E;
+            opacity: .5;
+      }
+      .backgroundlower {
+            position: relative;
+            margin-bottom: 0;
+            width: 100%;
+            height: 100px;
+            background-color:#86608E;
+            opacity: .5;
+      }
+
+      a.nav-link:hover{
+            background-color:#86608E;
+            opacity: .5;
+      }
+      a{  
+            display:block;
+            width:100%;
+            text-decoration: none;
+            background-color: #32174D;
+            color:#ffffff;
+            font-family: arial;
+            font-size: 12pt;
+            padding-top: 20px;
+            padding-bottom: 20px;
+      }
+      
+     
+      li {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+            color:#ffffff;
+            width:100%;
+      }
+      
+      .about{
+            width:100%;
+            height:100px;
+            /*background-color:#86608E;*/
+            /*margin-left: 2.5%;*/
+            /*margin-top: 2.5%;*/
+            clear:both;
+            /*margin-bottom:2.5%;*/
+      }
+      p {
+            text-align: center;
+            color:#ffffff;
+            padding-top: 35px;
+            font-size: 10pt;
+            opacity:1;
+      }
+
+      header {
+            position: relative;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="Content">
+      <header>
+          <img class="logocontainer"src="images/shoelogo.png">
+        <div class="gallery">
+          <div class="background"></div>
+           <!-- Start Slider BODY section -->
+          <div id="wowslider-container1">
+            <div class="ws_images">
+                  <ul>
+                    <li><img src="data1/images/shoes1.png" alt="shoes1" title="shoes1" id="wows1_0"/></li>
+                    <li><img src="data1/images/shoes4.png" alt="shoes4" title="shoes4" id="wows1_1"/></li>
+                    <li><img src="data1/images/shoes3.png" alt="shoes3" title="shoes3" id="wows1_2"/></li>
+                    <li><img src="data1/images/shoes5.png" alt="shoes5" title="shoes5" id="wows1_3"/></li>
+                    <li><img src="data1/images/shoes2.png" alt="shoes2" title="shoes2" id="wows1_4"/></li>
+                    <li><img src="data1/images/shoes6.png" alt="shoes6" title="shoes6" id="wows1_5"/></li>
+                    <li><img src="data1/images/shoes8.png" alt="shoes8" title="shoes8" id="wows1_6"/></li>
+                    <li><img src="data1/images/shoes7.png" alt="shoes7" title="shoes7" id="wows1_7"/></li>
+                  </ul>
+              </div>
+              <div class="ws_shadow"></div>
+          </div>  
+            <script type="text/javascript" src="engine1/wowslider.js"></script>
+            <script type="text/javascript" src="engine1/script.js"></script>
+          <!-- End Slider BODY section -->
+        </div>
+      </div>
+    <div class="left-column">
+        <div id="navcontainer">
+        <div id="nav">
+        <ul class = "nav-link">
+          <li><a class="nav-link" href="index.html">HOME</a></li>
+          <li><a class="nav-link" href="women.html">WOMEN</a></li>
+          <li><a class="nav-link" href="men.html">MEN</a></li>
+          <li><a class="nav-link" href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+    </div>
+        <div class="socmedcontainer"> </div>
+        <div class="contactcontainer"> </div>
+    </div>
+
+    <div class="right-column">
+        <div class="women"><a href="women.html">
+            <img src="images/women.png" width="100%"></a>
+            <p class="depttitle">WOMEN</p>
+        </div>
+        <div class="men"><a href="men.html">
+            <img src="images/men.png" width="100%"></a>
+            <p class="depttitle">MEN</p>
+        </div>
+    </div>
+  </div>
+   <div class="about">
+        <div class="backgroundlower">
+            <p>2009-2015 - Amazinshoes.com or its affiliates, 400 E. Stewart Avenue, Las Vegas, NV 89101
+            <br>
+            Amazinshoes.com is operated by Amazinshoes IP, Inc. Products on Zappos.com are sold by Amazinshoes Retail, Inc.
+            <br>
+            Gift cards and e-Gift cards sold on Amazinshoes.com are sold by Amazin Shoes Gift Cards, Inc. or ACI Gift Cards, Inc.</p>
+          </div>
+   </div>
+    
+  </body>
+</html>
