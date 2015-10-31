@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 // Location page: Map is hidden upon loading, then fades in over 2 sec
 
-		$("#location").hide(0).delay(500).fadeIn(3000)
+		$(".location").hide(0).delay(500).fadeIn(3000)
 
 
 // Women and Men pages: enlargement of thumbnails on clicking

@@ -4,109 +4,118 @@
           background-color: #32174D;
       }
         
-/*Left-column contains navigation bar*/
+/*Left-column contains logo and navigation bar*/
 
       .left-column {
           float: left;
           width: 20%;
           height: auto;
           background-color: #32174D;
+          margin-bottom:10%;
       }
 
 /*right-column contains home page gallery, about box, and anything below it*/
       .right-column {
           float: left;
-          /* float: right; */
           width: 77%;
           height: auto;
           background-color: #32174D;
+          margin-bottom:10%;
       }
 
-/*The following containers all go in the left-column*/
+/*The following containers all go in the left-column. Non-index pages only*/
       .logocontainer {
           width:100%;
-          height:200px;
+          /*height:250px;*/
+          height:25%;
           background-color: #32174D;
-          margin-bottom: 20px;
+          margin-bottom: 40px;
       }
 
 
       .navcontainer {
           width:100%;
-          height:400px;
-          text-align: center;   
-      }
-
-
-      .socmedcontainer {
-          width:100%;
-          height:60px;
-          background-color: #86608E;
-      }
+          height:600px;
+          text-align: center;
+          vertical-align: middle;  
+      } 
+        
 
 /*Women and Men divs. and scrolling gallery appear on home page only*/
-      .women {
-          width:46%;
-          height:800px;
+     /* .women {
+          width:47.5%;
+          height:550px;
           background-color: #9f0e97;
           float:left;
-          margin-left:2.5%;
       }
 
       .men {
-          width:46%;
-          height:800px;
+          width:47.5%;
+          height:550px;
           background-color: #9f0e97;
           float:right;
           margin-right:2.5%;
       }
 
-
-      /*p {
-          line-height: 0px;
+      .depttitle {
+          line-height: 60px;
           text-align: center;
           font-size: 20pt;
-      }*/
+          color:#ffffff;
+          padding-top: 10px;
+      }
+*/
 
-/*Gallery div has been removed for non-home pages*/
+/*Gallery divs have been removed for non-index pages*/
       /*.gallery{
           width:100%;
-          height:200px;
-          background-color:#32174D;
-          *margin-left: 2.5%;
+          height:260px;
+          *margin-bottom: 2.5%;
           
-      }*/
-
-
-      .left-column a {
-          text-decoration: none;
-          color:white;
-          font-family: arial;
-          font-size: 12pt;
-          text-decoration: center;
       }
 
-
-
-      .left-column a:hover {
-          background-color: #86608E;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          padding-right: 100%;
-          padding-left: 100%;
-          font-color:#ffffff;
+        .background {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#86608E;
+                    opacity: .5;
       }
+      */
+
+
+
+/*Styling for elements of navigation bar*/
+
+      .left-column a.nav-link:hover{
+            background-color:#86608E;
+            opacity: .5;
+      }
+
+      .left-column a {  
+            display:block;
+            width:100%;
+            text-decoration: none;
+            background-color: #32174D;
+            color:#ffffff;
+            font-family: arial;
+            font-size: 12pt;
+            padding-top: 20px;
+            padding-bottom: 20px;
+      }
+      
      
-    /*The styling for this li element should only be affecting the text in the navbar or left-column. See if we can make it more specific.*/
-    /* li {
-          padding-top: 40px;
-          padding-bottom: 40px;
-      }
-    */
-      
-      
-      /* This is the lavender about box at top of page on right*/
-      .about {
+      .left-column li {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+            color:#ffffff;
+            width:100%;
+      }      
+ 
+
+/* This is the lavender about box at top of page on right*/
+      .aboutTop {
           width:95%;
           /*height:200px;*/
           background-color:#86608E;
@@ -118,8 +127,33 @@
           line-height:30px;
           text-align:left;
           color:white;
-         /* margin-bottom: 300px;*/
+         
      }
+
+/*Styling for divs that go across bottom of page.*/
+      .about{             
+            width:100%;
+            height:100px;         
+            clear:both;
+            background-color:#86608E;
+            opacity: .5;          
+      }
+
+
+ /*   p {*/
+      .backgroundlower ul {      
+            text-align: center;
+            color:#ffffff;
+            padding-top: 35px;
+            font-size: 10pt;
+            opacity:1;
+      }
+      
+      .backgroundlower li {
+            padding-top:0;
+            padding-bottom:0;
+      }
+
 
 /*on about page only: the two divs below divide the about box into two columns of text*/
       .address, .hours {
@@ -138,11 +172,10 @@
           list-style:none;
       }
 
-    /*This div is a container for the image of the map on about page only*/
-      #location { 
-          display: none;
+    /*This is a container for the image of the map on about page only*/
+      .location { 
           display: inline-block;
-          margin-top: 3%;
+          margin-top:3%;
           margin-left:5%;
       }
 
@@ -152,7 +185,7 @@
             width:77%;
             margin:auto;
 
-        }
+      }
 
       .thumbnail {
         float:left;
